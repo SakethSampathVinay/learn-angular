@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from "./login/login.component";
 import { ProfileComponent } from './profile/profile.component';
+import { CounterApplicationComponent } from './counter-application/counter-application.component';
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [LoginComponent, ProfileComponent]
+  imports: [CounterApplicationComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
