@@ -3,13 +3,14 @@ import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from "./login/login.component";
 import { ProfileComponent } from './profile/profile.component';
 import { CounterApplicationComponent } from './counter-application/counter-application.component';
+import { GetAndSetInputComponent } from "./get-and-set-input/get-and-set-input.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [CounterApplicationComponent]
+  imports: [GetAndSetInputComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
