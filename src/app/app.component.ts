@@ -6,13 +6,14 @@ import { CounterApplicationComponent } from './counter-application/counter-appli
 import { GetAndSetInputComponent } from "./get-and-set-input/get-and-set-input.component";
 import { IfElseComponent } from "./if-else/if-else.component";
 import { SwitchCaseComponent } from "./switch-case/switch-case.component";
+import { ForLoopComponent } from "./for-loop/for-loop.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [SwitchCaseComponent]
+  imports: [ForLoopComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
