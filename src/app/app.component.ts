@@ -7,13 +7,14 @@ import { GetAndSetInputComponent } from "./get-and-set-input/get-and-set-input.c
 import { IfElseComponent } from "./if-else/if-else.component";
 import { SwitchCaseComponent } from "./switch-case/switch-case.component";
 import { ForLoopComponent } from "./for-loop/for-loop.component";
+import { SignalsComponent } from "./signals/signals.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [ForLoopComponent]
+  imports: [SignalsComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
