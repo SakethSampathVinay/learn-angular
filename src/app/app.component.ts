@@ -8,13 +8,15 @@ import { IfElseComponent } from "./if-else/if-else.component";
 import { SwitchCaseComponent } from "./switch-case/switch-case.component";
 import { ForLoopComponent } from "./for-loop/for-loop.component";
 import { SignalsComponent } from "./signals/signals.component";
+import { SignalsDataTypesComponent } from "./signals-data-types/signals-data-types.component";
+import { ComputedSignalsComponent } from "./computed-signals/computed-signals.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [SignalsComponent]
+  imports: [ComputedSignalsComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
