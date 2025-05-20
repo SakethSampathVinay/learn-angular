@@ -10,13 +10,14 @@ import { ForLoopComponent } from "./for-loop/for-loop.component";
 import { SignalsComponent } from "./signals/signals.component";
 import { SignalsDataTypesComponent } from "./signals-data-types/signals-data-types.component";
 import { ComputedSignalsComponent } from "./computed-signals/computed-signals.component";
+import { EffectComponent } from "./effect/effect.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [ComputedSignalsComponent]
+  imports: [EffectComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
