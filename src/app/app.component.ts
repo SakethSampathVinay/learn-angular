@@ -12,13 +12,15 @@ import { SignalsDataTypesComponent } from "./signals-data-types/signals-data-typ
 import { ComputedSignalsComponent } from "./computed-signals/computed-signals.component";
 import { EffectComponent } from "./effect/effect.component";
 import { ForLoopContextualComponent } from "./for-loop-contextual/for-loop-contextual.component";
+import { TwowayBindingComponent } from "./twoway-binding/twoway-binding.component";
+import { TodosApplicationComponent } from './todos-application/todos-application.component';
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [ForLoopContextualComponent]
+  imports: [TodosApplicationComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';

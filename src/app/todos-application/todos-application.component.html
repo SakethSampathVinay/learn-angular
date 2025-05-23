@@ -1,0 +1,13 @@
+<h1>Todos Application in Angular 19</h1>
+
+<input [(ngModel)]="todo" type="text" placeholder="Enter Todo here" />
+<button (click)="addTask()">Add Task</button>
+
+@for(todo of todosList; track todo.id) {
+<ul>
+  <li style="list-style: none; display: flex; flex-direction: row; margin: 10px;">
+    <p>{{ todo.todo }}</p>
+    <button (click)="deleteTask(todo.id)">DELETE</button>
+  </li>
+</ul>
+}
