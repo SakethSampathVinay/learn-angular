@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { LoginComponent } from "./login/login.component";
 import { ProfileComponent } from './profile/profile.component';
 import { CounterApplicationComponent } from './counter-application/counter-application.component';
@@ -16,13 +16,14 @@ import { TwowayBindingComponent } from "./twoway-binding/twoway-binding.componen
 import { TodosApplicationComponent } from './todos-application/todos-application.component';
 import { DynamicStylingComponent } from "./dynamic-styling/dynamic-styling.component";
 import { DirectivesComponent } from "./directives/directives.component";
+import { RoutingComponent } from "./routing/routing.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [DirectivesComponent]
+  imports: [RoutingComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
