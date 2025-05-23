@@ -15,13 +15,14 @@ import { ForLoopContextualComponent } from "./for-loop-contextual/for-loop-conte
 import { TwowayBindingComponent } from "./twoway-binding/twoway-binding.component";
 import { TodosApplicationComponent } from './todos-application/todos-application.component';
 import { DynamicStylingComponent } from "./dynamic-styling/dynamic-styling.component";
+import { DirectivesComponent } from "./directives/directives.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [DynamicStylingComponent]
+  imports: [DirectivesComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
@@ -39,4 +40,3 @@ export class AppComponent {
     console.log("Other Function Called");
   }
 }
-

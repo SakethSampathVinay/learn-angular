@@ -1,0 +1,40 @@
+<h1>Directives in Angular 19</h1>
+
+<h1 *ngIf="show">Heading Tag</h1>
+
+<ul>
+  <li *ngFor="let student of students">
+    {{ student }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let student of studentsData">
+    {{ student.name }}, {{ student.age }}, {{ student.email }}
+  </li>
+</ul>
+
+<div *ngIf="login; else elseBlock">
+  <a href="">Logout</a>
+</div>
+
+<ng-template #elseBlock>
+  <a href="">Login</a>
+</ng-template>
+
+<!-- *ngSwitch Directives -->
+
+<button (click)="changeColor('red')">Red</button>
+<button (click)="changeColor('green')">Green</button>
+<button (click)="changeColor('yellow')">Yellow</button>
+<button (click)="changeColor('blue')">Blue</button>
+<button (click)="changeColor('pink')">Pink</button>
+
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="background-color: red;">Red</h1>
+  <h1 *ngSwitchCase="'green'" style="background-color: green;">Green</h1>
+  <h1 *ngSwitchCase="'yellow'" style="background-color: yellow;">Yellow</h1>
+  <h1 *ngSwitchCase="'blue'" style="background-color: blue;">Blue</h1>
+  <h1 *ngSwitchCase="'pink'" style="background-color: pink;">Pink</h1>
+  <h1 *ngSwitchDefault="">No Color</h1>
+</div>
