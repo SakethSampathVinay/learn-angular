@@ -1,0 +1,8 @@
+<h1>Dynamic Styling in Angular 19</h1>
+
+<h1 [style.fontSize.pt]="fontSize" [style.backgroundColor]="bgColor">
+  Dynamic Style
+</h1>
+
+<h1 [style.fontSize]="zoom ? headingSizeBig : headingSizeSmall">Heading</h1>
+<button (click)="updateHeadingSize()">Toggle Font</button>

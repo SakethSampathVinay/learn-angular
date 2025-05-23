@@ -14,13 +14,14 @@ import { EffectComponent } from "./effect/effect.component";
 import { ForLoopContextualComponent } from "./for-loop-contextual/for-loop-contextual.component";
 import { TwowayBindingComponent } from "./twoway-binding/twoway-binding.component";
 import { TodosApplicationComponent } from './todos-application/todos-application.component';
+import { DynamicStylingComponent } from "./dynamic-styling/dynamic-styling.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [TodosApplicationComponent]
+  imports: [DynamicStylingComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
