@@ -17,13 +17,14 @@ import { TodosApplicationComponent } from './todos-application/todos-application
 import { DynamicStylingComponent } from "./dynamic-styling/dynamic-styling.component";
 import { DirectivesComponent } from "./directives/directives.component";
 import { RoutingComponent } from "./routing/routing.component";
+import { FormComponent } from "./form/form.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RoutingComponent]
+  imports: [FormComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
