@@ -18,13 +18,14 @@ import { DynamicStylingComponent } from "./dynamic-styling/dynamic-styling.compo
 import { DirectivesComponent } from "./directives/directives.component";
 import { RoutingComponent } from "./routing/routing.component";
 import { FormComponent } from "./form/form.component";
+import { FormGroupingComponent } from "./form-grouping/form-grouping.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [FormComponent]
+  imports: [FormGroupingComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
