@@ -34,4 +34,12 @@
 
 <!-- <app-form-grouping></app-form-grouping> -->
 
-<app-template-driven-form></app-template-driven-form>
+<!-- <app-template-driven-form></app-template-driven-form> -->
+
+<app-user [user]="selectedUser.value"></app-user>
+
+<select #selectedUser (change)="onUserChange(selectedUser.value)" name="" id="">
+    <option value="Saketh">Saketh</option>
+    <option value="Sampath">Sampath</option>
+    <option value="Vinay">Vinay</option>
+</select>
