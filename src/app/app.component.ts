@@ -22,13 +22,14 @@ import { FormGroupingComponent } from "./form-grouping/form-grouping.component";
 import { TemplateDrivenFormComponent } from "./template-driven-form/template-driven-form.component";
 import { UserComponent } from "./user/user.component";
 import { ReuseComponentComponent } from "./reuse-component/reuse-component.component";
+import { PipesComponent } from "./pipes/pipes.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [ReuseComponentComponent]
+  imports: [PipesComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
@@ -52,6 +53,8 @@ export class AppComponent {
   onUserChange(user: string) {
     this.userName = user;
   }
+
+
   
 
 }
