@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { afterRender, Component, ViewChild } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { LoginComponent } from "./login/login.component";
 import { ProfileComponent } from './profile/profile.component';
@@ -24,13 +24,15 @@ import { UserComponent } from "./user/user.component";
 import { ReuseComponentComponent } from "./reuse-component/reuse-component.component";
 import { PipesComponent } from "./pipes/pipes.component";
 import { CurrencyConvertorPipe } from './pipe/currency-convertor.pipe';
+import { ComponentLifecycleComponent } from "./component-lifecycle/component-lifecycle.component";
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [CurrencyConvertorPipe]
+  imports: [ComponentLifecycleComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
@@ -55,6 +57,19 @@ export class AppComponent {
     this.userName = user;
   }
 
-  amount = 10;
+  @ViewChild("counters") ComponentLifecycleComponent: any;
 
+
+  amount = 10;
+  counter = 0;
+
+  constructor() {
+    afterRender(() => {
+      console.log("afterRender", this.ComponentLifecycleComponent.counter);
+    })
+  }
+
+updateCounter() {
+  this.counter++;
+}
 }
