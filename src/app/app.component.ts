@@ -26,13 +26,15 @@ import { PipesComponent } from "./pipes/pipes.component";
 import { CurrencyConvertorPipe } from './pipe/currency-convertor.pipe';
 import { ComponentLifecycleComponent } from "./component-lifecycle/component-lifecycle.component";
 import { NgIf } from '@angular/common';
+import { ProductService } from './services/product.service';
+import { ProductServicesComponent } from "./product-services/product-services.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [ComponentLifecycleComponent]
+  imports: [ProductServicesComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
@@ -63,13 +65,13 @@ export class AppComponent {
   amount = 10;
   counter = 0;
 
-  constructor() {
-    afterRender(() => {
-      console.log("afterRender", this.ComponentLifecycleComponent.counter);
-    })
-  }
+//   constructor() {
+//     afterRender(() => {
+//       console.log("afterRender", this.ComponentLifecycleComponent.counter);
+//     })
+//   }
 
-updateCounter() {
-  this.counter++;
-}
+// updateCounter() {
+//   this.counter++;
+// }
 }
