@@ -23,13 +23,14 @@ import { TemplateDrivenFormComponent } from "./template-driven-form/template-dri
 import { UserComponent } from "./user/user.component";
 import { ReuseComponentComponent } from "./reuse-component/reuse-component.component";
 import { PipesComponent } from "./pipes/pipes.component";
+import { CurrencyConvertorPipe } from './pipe/currency-convertor.pipe';
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [PipesComponent]
+  imports: [CurrencyConvertorPipe]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
@@ -54,7 +55,6 @@ export class AppComponent {
     this.userName = user;
   }
 
-
-  
+  amount = 10;
 
 }
