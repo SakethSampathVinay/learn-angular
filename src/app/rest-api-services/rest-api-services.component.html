@@ -1,0 +1,13 @@
+<h1>Rest API in Angular 19</h1>
+
+@for(item of productList; track item) {
+    <ul>
+        <li>Name: {{item.title}}</li>
+        <li>Price: {{item.price}}</li>
+        <li>Rating: {{item.rating}}</li>
+        <li>Category: {{item.cateogory}}</li>
+        <br>
+        <li><img src = "{{item.thumbnail}}"/></li>
+        <br>
+    </ul>
+}

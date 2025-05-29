@@ -28,13 +28,14 @@ import { ComponentLifecycleComponent } from "./component-lifecycle/component-lif
 import { NgIf } from '@angular/common';
 import { ProductService } from './services/product.service';
 import { ProductServicesComponent } from "./product-services/product-services.component";
+import { RestApiServicesComponent } from "./rest-api-services/rest-api-services.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [ProductServicesComponent]
+  imports: [RestApiServicesComponent]
 })
 export class AppComponent {
   title = 'learn-angular-youtube';
